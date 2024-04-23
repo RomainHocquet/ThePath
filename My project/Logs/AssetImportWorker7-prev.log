@@ -1,0 +1,233 @@
+Using pre-set license
+Built from '2023.2/staging' branch; Version is '2023.2.19f1 (95c298372b1e) revision 9814680'; Using compiler version '193431935'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'fr' Physical Memory: 32669 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2023.2.19f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker7
+-projectPath
+C:/Important/projetUnity/My project
+-logFile
+Logs/AssetImportWorker7.log
+-srvPort
+56099
+-job-worker-count
+11
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: C:/Important/projetUnity/My project
+C:/Important/projetUnity/My project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [24096] Host "[IP] 192.168.0.15 [Port] 0 [Flags] 2 [Guid] 906527380 [EditorId] 906527380 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-43MNS7H) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [24096] Host "[IP] 192.168.0.15 [Port] 0 [Flags] 2 [Guid] 906527380 [EditorId] 906527380 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-43MNS7H) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 11
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Library Redirect Path: Library/
+Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2023.2.19f1 (95c298372b1e)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Important/projetUnity/My project/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon RX 6700 (ID=0x73df)
+    Vendor:   ATI
+    VRAM:     10195 MB
+    Driver:   31.0.24002.92
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.19f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56344
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002926 seconds.
+- Loaded All Assemblies, in  0.304 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.236 seconds
+Domain Reload Profiling: 538ms
+	BeginReloadAssembly (101ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (119ms)
+		LoadAssemblies (98ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (117ms)
+			TypeCache.Refresh (115ms)
+				TypeCache.ScanAssembly (105ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (237ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (197ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (145ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Important\projetUnity\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Important\projetUnity\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.670 seconds
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.571 seconds
+Domain Reload Profiling: 1236ms
+	BeginReloadAssembly (299ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (295ms)
+		LoadAssemblies (248ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (126ms)
+			TypeCache.Refresh (107ms)
+				TypeCache.ScanAssembly (98ms)
+			BuildScriptInfoCaches (14ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (571ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (427ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (362ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3142 unused Assets / (0.8 MB). Loaded Objects now: 3717.
+Memory consumption went from 102.6 MB to 101.8 MB.
+Total: 4.970100 ms (FindLiveObjects: 0.313400 ms CreateObjectMapping: 0.274100 ms MarkObjects: 3.751600 ms  DeleteObjects: 0.630400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 733442.529444 seconds.
+  path: Assets/imported/PolygonMiniFantasyCharacters/Models/Prop_BoneAxe_01.fbx
+  artifactKey: Guid(815c431301038224b8ed6d6d6dd16e90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/imported/PolygonMiniFantasyCharacters/Models/Prop_BoneAxe_01.fbx using Guid(815c431301038224b8ed6d6d6dd16e90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51bb9e1c75b5a58251783812c476962c') in 0.0986425 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/imported/PolygonMiniFantasyCharacters/Models/Prop_Sword_Broken_01.fbx
+  artifactKey: Guid(e6dbb48741371da40b628388e2f108d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/imported/PolygonMiniFantasyCharacters/Models/Prop_Sword_Broken_01.fbx using Guid(e6dbb48741371da40b628388e2f108d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a44977fd57067c45885e6cce806ac537') in 0.0126629 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/imported/PolygonMiniFantasyCharacters/Models/Prop_Club_01.fbx
+  artifactKey: Guid(b8c1379590b8d0d498ca6e4374397a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/imported/PolygonMiniFantasyCharacters/Models/Prop_Club_01.fbx using Guid(b8c1379590b8d0d498ca6e4374397a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2332c7cfacedd63f5845b73c14bb69f6') in 0.0123812 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/imported/PolygonMiniFantasyCharacters/Models/Prop_Revolver_01.fbx
+  artifactKey: Guid(33b0441c79ed7f246a01c3a0c12ee7bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/imported/PolygonMiniFantasyCharacters/Models/Prop_Revolver_01.fbx using Guid(33b0441c79ed7f246a01c3a0c12ee7bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e7710f7c9157bd5b61798d2f0e114560') in 0.0114564 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/imported/PolygonMiniFantasyCharacters/Models/Prop_ShieldKnight_01.fbx
+  artifactKey: Guid(340f47eb01cfdab468821fb26fa8eddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/imported/PolygonMiniFantasyCharacters/Models/Prop_ShieldKnight_01.fbx using Guid(340f47eb01cfdab468821fb26fa8eddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7278b328ef6678491cd7a9eb7b9171e9') in 0.0123118 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/imported/PolygonMiniFantasyCharacters/Models/Prop_NatureStaff_01.fbx
+  artifactKey: Guid(6d09b38283235f2418d96c1f0bc1a9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/imported/PolygonMiniFantasyCharacters/Models/Prop_NatureStaff_01.fbx using Guid(6d09b38283235f2418d96c1f0bc1a9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e577cf76b5604697b1badaac192b8703') in 0.0111757 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.014503 seconds.
+  path: Assets/imported/PolygonMiniFantasyCharacters/Textures/PolygonMinis_Texture_Blue_C.png
+  artifactKey: Guid(60f289d89d8d7cc449c28fa6025f6d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/imported/PolygonMiniFantasyCharacters/Textures/PolygonMinis_Texture_Blue_C.png using Guid(60f289d89d8d7cc449c28fa6025f6d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '342e79818605a24032686da3e5c38c94') in 0.0154388 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -1,0 +1,1017 @@
+Using pre-set license
+Built from '2023.2/staging' branch; Version is '2023.2.19f1 (95c298372b1e) revision 9814680'; Using compiler version '193431935'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'fr' Physical Memory: 32669 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2023.2.19f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker12
+-projectPath
+C:/Important/projetUnity/My project
+-logFile
+Logs/AssetImportWorker12.log
+-srvPort
+56099
+-job-worker-count
+11
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: C:/Important/projetUnity/My project
+C:/Important/projetUnity/My project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [6032] Host "[IP] 192.168.0.15 [Port] 0 [Flags] 2 [Guid] 2444257889 [EditorId] 2444257889 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-43MNS7H) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [6032] Host "[IP] 192.168.0.15 [Port] 0 [Flags] 2 [Guid] 2444257889 [EditorId] 2444257889 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-43MNS7H) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 11
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Library Redirect Path: Library/
+Refreshing native plugins compatible for Editor in 1.29 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2023.2.19f1 (95c298372b1e)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Important/projetUnity/My project/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon RX 6700 (ID=0x73df)
+    Vendor:   ATI
+    VRAM:     10195 MB
+    Driver:   31.0.24002.92
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.19f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56364
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004895 seconds.
+- Loaded All Assemblies, in  0.360 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.277 seconds
+Domain Reload Profiling: 633ms
+	BeginReloadAssembly (125ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (135ms)
+		LoadAssemblies (120ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (133ms)
+			TypeCache.Refresh (131ms)
+				TypeCache.ScanAssembly (120ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (277ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (235ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (177ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Important\projetUnity\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Important\projetUnity\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.775 seconds
+Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.658 seconds
+Domain Reload Profiling: 1428ms
+	BeginReloadAssembly (347ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (347ms)
+		LoadAssemblies (306ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (139ms)
+			TypeCache.Refresh (115ms)
+				TypeCache.ScanAssembly (103ms)
+			BuildScriptInfoCaches (16ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (658ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (498ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (43ms)
+			ProcessInitializeOnLoadAttributes (421ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3143 unused Assets / (0.7 MB). Loaded Objects now: 3726.
+Memory consumption went from 107.5 MB to 106.7 MB.
+Total: 6.235500 ms (FindLiveObjects: 0.368100 ms CreateObjectMapping: 0.339100 ms MarkObjects: 4.680300 ms  DeleteObjects: 0.847400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 734148.204282 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Env_Generic_Cliffs_03_Snow.fbx
+  artifactKey: Guid(b0682af5f7a06234d91920110711b378) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Env_Generic_Cliffs_03_Snow.fbx using Guid(b0682af5f7a06234d91920110711b378) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd20ccb9bfd1e04c5fcd3a65dded908c3') in 0.0983308 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Textures/FX_Ring_Semi.png
+  artifactKey: Guid(6a5ca1ebef457844986264e40d22d800) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Textures/FX_Ring_Semi.png using Guid(6a5ca1ebef457844986264e40d22d800) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3448b1442748eee64533b276e45ff263') in 0.040868 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Bld_Knights_House_04_Snow.fbx
+  artifactKey: Guid(8a7c75419c7688a499368081c4a2216d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Bld_Knights_House_04_Snow.fbx using Guid(8a7c75419c7688a499368081c4a2216d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c20d1460524a9ed75bcf2fb747c4ed3e') in 0.0136202 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Shaders/LocalFog_Multiply.shader
+  artifactKey: Guid(51403a42ac7d6c44db061e324cd59897) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Shaders/LocalFog_Multiply.shader using Guid(51403a42ac7d6c44db061e324cd59897) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '698e41691ca3579e2ea18a78e9e6d836') in 0.0169417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Bld_Knights_Castle_07_Snow.fbx
+  artifactKey: Guid(95b7bcefccdcc8248a171b641f6fd235) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Bld_Knights_Castle_07_Snow.fbx using Guid(95b7bcefccdcc8248a171b641f6fd235) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '985fe8a7f05489620a64df90932d7531') in 0.0135289 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Bld_Western_Church_01_Snow.fbx
+  artifactKey: Guid(582e58de112d1164bb5b0ed4898de7ee) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Bld_Western_Church_01_Snow.fbx using Guid(582e58de112d1164bb5b0ed4898de7ee) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '00fe57fc79c708e6d03e796cb184b00a') in 0.01361 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Bld_Adventure_Wall_01_Snow.fbx
+  artifactKey: Guid(5a46328be3bcee84c98d96dff72f804e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Bld_Adventure_Wall_01_Snow.fbx using Guid(5a46328be3bcee84c98d96dff72f804e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b121b033e721ca834811e79ea8046e8b') in 0.0133514 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Env_Dungeon_Crystal_02_Snow.fbx
+  artifactKey: Guid(210d78f4ec6316b4d9c7c0a037d4eca2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Env_Dungeon_Crystal_02_Snow.fbx using Guid(210d78f4ec6316b4d9c7c0a037d4eca2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '779550d9972f71f06079c02e509105f6') in 0.0141174 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/SM_UI_Cube_Selection_01.fbx
+  artifactKey: Guid(8e45a8693daee1043804e5a04af39312) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/SM_UI_Cube_Selection_01.fbx using Guid(8e45a8693daee1043804e5a04af39312) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a26700073bb248976b1bc571977a4b22') in 0.0171881 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Bld_Pirates_Fountain_01_Snow.fbx
+  artifactKey: Guid(8331af6bfeafa974380ed3d28e08cf9f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Bld_Pirates_Fountain_01_Snow.fbx using Guid(8331af6bfeafa974380ed3d28e08cf9f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '83d744b5e1cceeda46378a26acc0e988') in 0.0134831 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Env_Dungeon_Crystal_01_Snow.fbx
+  artifactKey: Guid(bd4c2659639fc3f44b9e40c83384c1ff) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Env_Dungeon_Crystal_01_Snow.fbx using Guid(bd4c2659639fc3f44b9e40c83384c1ff) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f9dcd6680b4797f2704c8b567525cea4') in 0.0147101 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/SM_Tile_Hex_River_04.fbx
+  artifactKey: Guid(5c052342bf1ce40479901e8207a0ab88) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/SM_Tile_Hex_River_04.fbx using Guid(5c052342bf1ce40479901e8207a0ab88) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cf172f490d08aff9f39ff4a79fe8c5e2') in 0.0138776 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/SM_Prop_Viking_Sheild_03.fbx
+  artifactKey: Guid(43854d8fb668f2842ada8f64ee84b25d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/SM_Prop_Viking_Sheild_03.fbx using Guid(43854d8fb668f2842ada8f64ee84b25d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a1281a923f2479ecca2f35bb660d4f23') in 0.0145775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Textures/PolygonMinis_Texture_01.png
+  artifactKey: Guid(65bf252a1d0243b40a63ee08ad703289) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Textures/PolygonMinis_Texture_01.png using Guid(65bf252a1d0243b40a63ee08ad703289) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4abe6cd0e9960ae196b38c08b97b1a8b') in 0.0142682 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/SM_Tile_Cube_Path_02.fbx
+  artifactKey: Guid(ab6b8ee977148a64fb5636e11a9551d7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/SM_Tile_Cube_Path_02.fbx using Guid(ab6b8ee977148a64fb5636e11a9551d7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ffc9e14994a25bf8e63d5552ff121dd5') in 0.0135453 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/SM_Prop_TreasureChest_Open_02.fbx
+  artifactKey: Guid(48044c202b9328f4ea43b9b6fc30ac3d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/SM_Prop_TreasureChest_Open_02.fbx using Guid(48044c202b9328f4ea43b9b6fc30ac3d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e8e28a3548dfb59906a3dbd2832259b8') in 0.0148706 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/SM_Tile_Hex_Hill_02.fbx
+  artifactKey: Guid(9263cfbc78d2f07479bc6694f12bff74) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/SM_Tile_Hex_Hill_02.fbx using Guid(9263cfbc78d2f07479bc6694f12bff74) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '686ae8434b76830f0578e9a0ba23c81f') in 0.0135363 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/SM_UI_Level_02.fbx
+  artifactKey: Guid(ae673f345ab35d24d9103eff059e9377) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/SM_UI_Level_02.fbx using Guid(ae673f345ab35d24d9103eff059e9377) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c269ddf2435c76e165ec84d61dbbe2f2') in 0.0139506 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.063408 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Env_Generic_Tree_01_Snow.fbx
+  artifactKey: Guid(adb944fd936125f4aa99d6bfdb6ae85b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Env_Generic_Tree_01_Snow.fbx using Guid(adb944fd936125f4aa99d6bfdb6ae85b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c9098546a0cadf70d6f6d6e025f16100') in 0.0153543 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Dungeon_Crystal_01.prefab
+  artifactKey: Guid(99a221b0cbe98d64fa609eefe7c454b8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Dungeon_Crystal_01.prefab using Guid(99a221b0cbe98d64fa609eefe7c454b8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1553cf02be36f76efd6b1287e8521aaf') in 0.0118431 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Buildings/SM_Bld_Western_Building_01.prefab
+  artifactKey: Guid(2ecde5dc1035e164a88a5dafc2e5d000) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Buildings/SM_Bld_Western_Building_01.prefab using Guid(2ecde5dc1035e164a88a5dafc2e5d000) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f087b1035ed080312517b41898beebc6') in 0.0132691 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Buildings/SM_Bld_Knights_House_01.prefab
+  artifactKey: Guid(a4a521900c27d504aa19df480329f342) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Buildings/SM_Bld_Knights_House_01.prefab using Guid(a4a521900c27d504aa19df480329f342) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '14068b500d8b3c922696ba1a198b4eef') in 0.0118521 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Env_Generic_Tree_08_Snow.fbx
+  artifactKey: Guid(6e208903343077a4c936e6dcfb809067) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Env_Generic_Tree_08_Snow.fbx using Guid(6e208903343077a4c936e6dcfb809067) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5290186352997cb2255130fdabd73e55') in 0.012875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Dungeon_Mushroom_02.prefab
+  artifactKey: Guid(eb33f9d73a8386b4a91e6e43a2f3727f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Dungeon_Mushroom_02.prefab using Guid(eb33f9d73a8386b4a91e6e43a2f3727f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fa6859d10c42ce5bf3a57dd6c3118990') in 0.0116988 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Cliffs_02.prefab
+  artifactKey: Guid(d152440d4f16f224aa15d46506a66c25) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Cliffs_02.prefab using Guid(d152440d4f16f224aa15d46506a66c25) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '794e5d8bb7c9eeb632b055af1eed283b') in 0.0110397 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Buildings/SM_Bld_Pirate_Fort_03.prefab
+  artifactKey: Guid(cd7b849e72fc0ee41bd1327d38329fc0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Buildings/SM_Bld_Pirate_Fort_03.prefab using Guid(cd7b849e72fc0ee41bd1327d38329fc0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f9a5977211d13eb152c63987c51e4252') in 0.0118929 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Buildings/SM_Bld_Viking_Dock_02.prefab
+  artifactKey: Guid(21f52999be5f9584cb407887b1b8c31c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Buildings/SM_Bld_Viking_Dock_02.prefab using Guid(21f52999be5f9584cb407887b1b8c31c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e340fab15d704517ebfca26e078309ba') in 0.012886 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Buildings/SM_Bld_Samurai_Temple_01.prefab
+  artifactKey: Guid(c7f16756cd602174f9e5c60d3ce995f9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Buildings/SM_Bld_Samurai_Temple_01.prefab using Guid(c7f16756cd602174f9e5c60d3ce995f9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0191a20e223c977d2edd3eb6d5f2f9ae') in 0.0110125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Backgrounds/SM_Background_Desert_02.prefab
+  artifactKey: Guid(538d791b7a743dd498ca9cda513a377b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Backgrounds/SM_Background_Desert_02.prefab using Guid(538d791b7a743dd498ca9cda513a377b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9bc102b8acebb9ca8fd053d6d8f8d18e') in 0.0121467 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Env_Generic_Tree_06_Snow.fbx
+  artifactKey: Guid(603abb0adab34e347ada7cdd6059074e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Env_Generic_Tree_06_Snow.fbx using Guid(603abb0adab34e347ada7cdd6059074e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3fee346092d047e6ba41ce7b4f6924ed') in 0.0138164 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Bush_02.prefab
+  artifactKey: Guid(a2124702f799b3b49a71325eafe7ba82) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Bush_02.prefab using Guid(a2124702f799b3b49a71325eafe7ba82) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '58723bf3366bd203a74e0a2819bc39a6') in 0.0104275 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Buildings/SM_Bld_Adventure_House_01.prefab
+  artifactKey: Guid(8e72a8a544327914bbed76275dea13ac) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Buildings/SM_Bld_Adventure_House_01.prefab using Guid(8e72a8a544327914bbed76275dea13ac) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '910b67a8b2901ebf8ad34439e86124fa') in 0.0148561 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Prop_Adventure_Well_01_Snow.fbx
+  artifactKey: Guid(73718b667f8d0f643bfdd92917f99995) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Prop_Adventure_Well_01_Snow.fbx using Guid(73718b667f8d0f643bfdd92917f99995) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '211a83ee1dc344704ae8d27cfbbc0fa7') in 0.0126821 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Prop_Stairs_Wood_01_Snow.fbx
+  artifactKey: Guid(bef3b525df46f7045ae5f7d761691b7a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Prop_Stairs_Wood_01_Snow.fbx using Guid(bef3b525df46f7045ae5f7d761691b7a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1a4a2e56d7e73716520d3bacea10e648') in 0.0129227 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Buildings/SM_Bld_Pirates_House_02.prefab
+  artifactKey: Guid(73319f0fcc108544d995dfb3dac87b41) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Buildings/SM_Bld_Pirates_House_02.prefab using Guid(73319f0fcc108544d995dfb3dac87b41) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '00c48a553498cbf0fd09958a3a6779c6') in 0.0104972 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Dungeon_Rocks_01.prefab
+  artifactKey: Guid(57620523e48d78b40afe0c71cfbda800) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Dungeon_Rocks_01.prefab using Guid(57620523e48d78b40afe0c71cfbda800) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fc62e3e6fe6fc7a942d9f4b88e8976e4') in 0.0117679 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Barrel_01.prefab
+  artifactKey: Guid(4aeaec4860e73fd4ca6df66c7fd200dd) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Barrel_01.prefab using Guid(4aeaec4860e73fd4ca6df66c7fd200dd) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bfafadf38019b117e00f834a6bfa7f42') in 0.0099495 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Backgrounds/SM_Background_Volcanic_03.prefab
+  artifactKey: Guid(50406716efe41a44783841e503ed011f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Backgrounds/SM_Background_Volcanic_03.prefab using Guid(50406716efe41a44783841e503ed011f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a4da2e0198af9bfe2994ac7bbd24bba3') in 0.0107816 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Cliffs_05.prefab
+  artifactKey: Guid(c7ffd50f32456bd4f95fe4a9383de087) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Cliffs_05.prefab using Guid(c7ffd50f32456bd4f95fe4a9383de087) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2d3ef196cc99162889a1518928ec5007') in 0.011146 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Env_Western_Rock_01_Snow.fbx
+  artifactKey: Guid(c34170ff8bae26147ad2c351d954300c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Env_Western_Rock_01_Snow.fbx using Guid(c34170ff8bae26147ad2c351d954300c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5a6f8b33c3f973724f1367ae58049afc') in 0.0145912 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Prop_Adventure_Cover_01_Snow.fbx
+  artifactKey: Guid(1846434dab32fc64dac1afeace50f04a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Models/Snow/SM_Prop_Adventure_Cover_01_Snow.fbx using Guid(1846434dab32fc64dac1afeace50f04a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '101ff69d9209485192c3cbc1aa455c52') in 0.0125627 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Cloud_03.prefab
+  artifactKey: Guid(133a9204252398c4e8dc4921972ae586) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Cloud_03.prefab using Guid(133a9204252398c4e8dc4921972ae586) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8b4af543a9e7485d093fb2c9db5a9d8e') in 0.011593 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Buildings/SM_Bld_Dungeon_Crypt_01.prefab
+  artifactKey: Guid(1d7abf37fb59592478a107a3c1aed118) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Buildings/SM_Bld_Dungeon_Crypt_01.prefab using Guid(1d7abf37fb59592478a107a3c1aed118) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ca113221305cb852882467a9faa95e17') in 0.0107403 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.209252 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Cloud_06.prefab
+  artifactKey: Guid(f4bbab80144a23846aa10e04c7e561f5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Cloud_06.prefab using Guid(f4bbab80144a23846aa10e04c7e561f5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd9679c59f528d95a85deabcb73df54e4') in 0.0129991 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Props/SM_Prop_Generic_Bone_01.prefab
+  artifactKey: Guid(e596f440153fd4c4f9a23dacc4cbab2e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Props/SM_Prop_Generic_Bone_01.prefab using Guid(e596f440153fd4c4f9a23dacc4cbab2e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '122dfa108407a5353702c7b4b88623d5') in 0.0118017 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Grass_01.prefab
+  artifactKey: Guid(922382aacbe5e3547a83f0d53e5a850c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Grass_01.prefab using Guid(922382aacbe5e3547a83f0d53e5a850c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'aa292936465d95b39d83875408d6f490') in 0.0111839 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Samurai_Crops_01.prefab
+  artifactKey: Guid(5b53e2fc6367e0d4d8eba025aed4bd0a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Samurai_Crops_01.prefab using Guid(5b53e2fc6367e0d4d8eba025aed4bd0a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0736a0d0c1ebdaabb8b4183fc3b52fa5') in 0.0118699 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Env_Pirate_Palm_02_Snow.prefab
+  artifactKey: Guid(4f0a9dd0495f9e244b1a532113f58864) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Env_Pirate_Palm_02_Snow.prefab using Guid(4f0a9dd0495f9e244b1a532113f58864) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1044acd1fbd1c254da46405dd4803683') in 0.0105352 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/FX/FX_Waves_01.prefab
+  artifactKey: Guid(52cb8d66accce0d4ca8239d32cdabaac) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/FX/FX_Waves_01.prefab using Guid(52cb8d66accce0d4ca8239d32cdabaac) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '42f67206c26edede4e31fb56a8e063cd') in 0.0495505 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Bld_Knights_Tent_01_Snow.prefab
+  artifactKey: Guid(254ccb16d6439c047871c199b0c9ee61) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Bld_Knights_Tent_01_Snow.prefab using Guid(254ccb16d6439c047871c199b0c9ee61) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b76155c221c4c865f7c31920a9e22ef7') in 0.0113941 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Viking_Iceberg_03.prefab
+  artifactKey: Guid(74e7f62778aef15499dc4f843d3d34a3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Viking_Iceberg_03.prefab using Guid(74e7f62778aef15499dc4f843d3d34a3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8f6693a57f79ea321512e21fa9a0bb6c') in 0.0118974 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Env_Generic_River_Stone_02_Snow.prefab
+  artifactKey: Guid(792f968a57a77064ba2199e466cb171e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Env_Generic_River_Stone_02_Snow.prefab using Guid(792f968a57a77064ba2199e466cb171e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9d1cd51d9cf49ad022c9d30231e698e2') in 0.0118116 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Tree_02.prefab
+  artifactKey: Guid(b3d5bf97186b3d949b317b06faa1e9b8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Tree_02.prefab using Guid(b3d5bf97186b3d949b317b06faa1e9b8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0dc4844a671eb7b386a4a941b5a8a64f') in 0.0111681 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Western_Cactus_01.prefab
+  artifactKey: Guid(6dee437bc869aa14b9c3e6b4a61053c1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Western_Cactus_01.prefab using Guid(6dee437bc869aa14b9c3e6b4a61053c1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a1b7fe17c7a9e483887b078685ad207b') in 0.0117606 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Env_Samurai_Bamboo_01_Snow.prefab
+  artifactKey: Guid(01ab1ddfe11e9904f94f44410fb4da01) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Env_Samurai_Bamboo_01_Snow.prefab using Guid(01ab1ddfe11e9904f94f44410fb4da01) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '169c0df37e41e074a6e6d27bdb75ee92') in 0.0109401 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Rock_03.prefab
+  artifactKey: Guid(ef317bd7ae6eba348b8a0bb435ea82d3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Rock_03.prefab using Guid(ef317bd7ae6eba348b8a0bb435ea82d3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '44b7001d1a74a1d4f53596c15b05475e') in 0.0122111 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Bld_Knights_Castle_Flag_02_Snow.prefab
+  artifactKey: Guid(01d0f04ebee1ce841bc116088adc2ac5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Bld_Knights_Castle_Flag_02_Snow.prefab using Guid(01d0f04ebee1ce841bc116088adc2ac5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2bed1163d38a35b966353806cdbd96b7') in 0.0122501 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Tree_07.prefab
+  artifactKey: Guid(b0eaaca33c269e0498d921cc60273eae) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Tree_07.prefab using Guid(b0eaaca33c269e0498d921cc60273eae) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '369c0d2698a1c87fe8652884e56074be') in 0.0110232 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Bld_Pirates_Fountain_01_Snow.prefab
+  artifactKey: Guid(83e290b7049424c42b30c1258909bc24) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Bld_Pirates_Fountain_01_Snow.prefab using Guid(83e290b7049424c42b30c1258909bc24) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7c2412a9db1f7f1ca769d22a7d65a116') in 0.0123357 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Tree_04.prefab
+  artifactKey: Guid(ed14f566be6563e4a9902b7a2adfe83c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Tree_04.prefab using Guid(ed14f566be6563e4a9902b7a2adfe83c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a8ea2f9203946f467490d4211e3c0ed2') in 0.0110809 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Env_Viking_Iceberg_02_Snow.prefab
+  artifactKey: Guid(b97247cefd9fcdb498881f23731e25d1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Env_Viking_Iceberg_02_Snow.prefab using Guid(b97247cefd9fcdb498881f23731e25d1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e3f3f2d810cb3d90b008a43e0ed9e53c') in 0.0143465 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Bld_Pirates_House_02_Snow.prefab
+  artifactKey: Guid(26be55eece4320942b7345fb4bc36170) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Bld_Pirates_House_02_Snow.prefab using Guid(26be55eece4320942b7345fb4bc36170) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7a8f41fdbcab993ab7b817fa4a99bb33') in 0.0152156 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Env_Western_Butte_02_Snow.prefab
+  artifactKey: Guid(d770e765e9b1a2843b3c3c5605f32aed) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Env_Western_Butte_02_Snow.prefab using Guid(d770e765e9b1a2843b3c3c5605f32aed) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b88a75741fd575c5594c2029e82da319') in 0.0108978 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Bld_Viking_Dock_01_Snow.prefab
+  artifactKey: Guid(c5d41437269ec6c429d4783dd8019a5e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Bld_Viking_Dock_01_Snow.prefab using Guid(c5d41437269ec6c429d4783dd8019a5e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5e6cf78fafb9d028ac3aa124d70ea003') in 0.0114833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Bld_Samurai_House_01_Snow.prefab
+  artifactKey: Guid(628495826858dbf4f9e4f2732dd9cce6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Bld_Samurai_House_01_Snow.prefab using Guid(628495826858dbf4f9e4f2732dd9cce6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4b5e1a361ece38f9566b7ff29a4b09e9') in 0.010694 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Bld_Viking_House_01_Snow.prefab
+  artifactKey: Guid(b80dcda2cded8a44c9a6338e0235a9aa) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Bld_Viking_House_01_Snow.prefab using Guid(b80dcda2cded8a44c9a6338e0235a9aa) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '79ed7b642b2c1438af8ddb5dab319f68') in 0.0109626 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/FX/FX_Waves_Large_01.prefab
+  artifactKey: Guid(94d531e8767470545b0d0b15d0e22a3b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/FX/FX_Waves_Large_01.prefab using Guid(94d531e8767470545b0d0b15d0e22a3b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '014262781afa0af802b7b2bf51638c0b') in 0.0212253 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Tree_01.prefab
+  artifactKey: Guid(84650fac5bc773e4f9e6eac4cb77c5ee) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Tree_01.prefab using Guid(84650fac5bc773e4f9e6eac4cb77c5ee) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f08d7cdef4e271cf04dccda3194e57c7') in 0.0113664 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Env_Viking_Iceberg_03_Snow.prefab
+  artifactKey: Guid(406c2a920b1bb8843a73c2211456482d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Env_Viking_Iceberg_03_Snow.prefab using Guid(406c2a920b1bb8843a73c2211456482d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c4e6bb3c8b8adf34132c571000f7f3fd') in 0.0139435 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Props/SM_Prop_Stairs_Stone_02.prefab
+  artifactKey: Guid(6387e6559ed83434e8fffeb97d67c727) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Props/SM_Prop_Stairs_Stone_02.prefab using Guid(6387e6559ed83434e8fffeb97d67c727) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '598e0d64a4e4865032163a11639840bb') in 0.0112822 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Env_Viking_Iceberg_01_Snow.prefab
+  artifactKey: Guid(f37e617fcf6540d49aba46fdd0538b7a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Env_Viking_Iceberg_01_Snow.prefab using Guid(f37e617fcf6540d49aba46fdd0538b7a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'be6da01d3343b242411bab9816305806') in 0.0115718 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Tree_010.prefab
+  artifactKey: Guid(57bc32858b425344f80f095f6d9dbbcf) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Tree_010.prefab using Guid(57bc32858b425344f80f095f6d9dbbcf) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cbfeed2b7d44793c783d448aeb0fe212') in 0.0122228 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Viking_Iceberg_02.prefab
+  artifactKey: Guid(f9a88deddd9ed8540aa467a2f452c638) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Viking_Iceberg_02.prefab using Guid(f9a88deddd9ed8540aa467a2f452c638) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '10b79ffa5fbe2c32ec51cc5658bdd2d2') in 0.0119292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Bld_Samurai_Arch_01_Snow.prefab
+  artifactKey: Guid(25f1901ba359a8e43a01aafbf7bb0486) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Bld_Samurai_Arch_01_Snow.prefab using Guid(25f1901ba359a8e43a01aafbf7bb0486) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9a9951948003a6c56011acddc9c89cbd') in 0.012702 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Tree_09.prefab
+  artifactKey: Guid(ad237d67c29320845be31ecbfb02ad1a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Environments/SM_Env_Generic_Tree_09.prefab using Guid(ad237d67c29320845be31ecbfb02ad1a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7dd8fa479c58d991fb3b1048ff77a742') in 0.0104271 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Bld_Viking_House_02_Snow.prefab
+  artifactKey: Guid(aad6a713972299846b5b611b203d4095) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Bld_Viking_House_02_Snow.prefab using Guid(aad6a713972299846b5b611b203d4095) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '95323b7bbcff98617702ce9733fe98fb') in 0.012343 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Props/SM_Prop_Pirate_Cannon_01.prefab
+  artifactKey: Guid(50f022ff3a300294c826b700ebb3cc14) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Props/SM_Prop_Pirate_Cannon_01.prefab using Guid(50f022ff3a300294c826b700ebb3cc14) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '010b14ccfaab8af507d812bea20b4dc6') in 0.0111248 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Bld_Samurai_Temple_02_Snow.prefab
+  artifactKey: Guid(3430ba02d178ae34c909197953f6b14a) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Bld_Samurai_Temple_02_Snow.prefab using Guid(3430ba02d178ae34c909197953f6b14a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fa0196d9191d46ab245f996960cc7ccc') in 0.0116863 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/FX/FX_Fire_01.prefab
+  artifactKey: Guid(09c8cc0a641486040aec95623f203a5f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/FX/FX_Fire_01.prefab using Guid(09c8cc0a641486040aec95623f203a5f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4ca2d32ff94aaabc82f407b2908b99a5') in 0.0221432 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Props/SM_Prop_Western_Town_Arch_01.prefab
+  artifactKey: Guid(7cc6dadddfe282841b072df337651f67) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Props/SM_Prop_Western_Town_Arch_01.prefab using Guid(7cc6dadddfe282841b072df337651f67) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd3ff6b81fe83ff643d932d4b1cdeb33e') in 0.0111575 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003141 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Prop_Pirate_Boat_02_Snow.prefab
+  artifactKey: Guid(62e1615423c7f324db4d6ac67dd8b54c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Prop_Pirate_Boat_02_Snow.prefab using Guid(62e1615423c7f324db4d6ac67dd8b54c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '794229a5b131b2f8e9b2957641993113') in 0.0112118 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Prop_Stairs_Wood_02_Snow.prefab
+  artifactKey: Guid(41184c7b2976a794c8e32bafb69f64c3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Prop_Stairs_Wood_02_Snow.prefab using Guid(41184c7b2976a794c8e32bafb69f64c3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '46f1c553c9a835a5daa9c967781c4886') in 0.0120351 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Cube/SM_Tile_Cube_Rocks_01.prefab
+  artifactKey: Guid(1e43a30377fb0594f91be4ce197de1ab) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Cube/SM_Tile_Cube_Rocks_01.prefab using Guid(1e43a30377fb0594f91be4ce197de1ab) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a4da87bb18d2b3ee2f38a4fb478e3a3d') in 0.0129954 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Cube/SM_Tile_Cube_Flat_03.prefab
+  artifactKey: Guid(6af528d1fecfd2345b4383c3492da1d5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Cube/SM_Tile_Cube_Flat_03.prefab using Guid(6af528d1fecfd2345b4383c3492da1d5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e63bc91857e8e313688fa94efd34becf') in 0.0110155 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Prop_TreasureChest_Closed_02_Snow.prefab
+  artifactKey: Guid(f1dd087b0f1f1b04f88af8ac72d48b80) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Prop_TreasureChest_Closed_02_Snow.prefab using Guid(f1dd087b0f1f1b04f88af8ac72d48b80) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '48541e83d20c197e3b806f3b255d41b1') in 0.0127008 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_Hill_04.prefab
+  artifactKey: Guid(b65470050a6ef854ca4354131bd00eb4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_Hill_04.prefab using Guid(b65470050a6ef854ca4354131bd00eb4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '75a1d921f41dcb6c23802820a9d55cd9') in 0.011471 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_River_02.prefab
+  artifactKey: Guid(74d326a9e30f5d14b9bd30ccd9f65b9d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_River_02.prefab using Guid(74d326a9e30f5d14b9bd30ccd9f65b9d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8d3c6138171ea8b0a7a5dee108a1511f') in 0.011807 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/UI/SM_UI_Icon_Skull_01.prefab
+  artifactKey: Guid(9688c4c1937ea2f4ab16284ff3cd0824) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/UI/SM_UI_Icon_Skull_01.prefab using Guid(9688c4c1937ea2f4ab16284ff3cd0824) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '39d93b31e4487b5c49b9a835dd57c960') in 0.0130326 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_Path_06.prefab
+  artifactKey: Guid(19030c259fd90c744a07c10a5d9b4382) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_Path_06.prefab using Guid(19030c259fd90c744a07c10a5d9b4382) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd91317289f42321d4927ac24229c6af8') in 0.0111592 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Cube/SM_Tile_Cube_River_02.prefab
+  artifactKey: Guid(fb1b4c0f2b9e7fe45bc44b8233a09f1f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Cube/SM_Tile_Cube_River_02.prefab using Guid(fb1b4c0f2b9e7fe45bc44b8233a09f1f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '889d5b3841696f105089d5aa7e812dd2') in 0.0117378 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_Pond_02.prefab
+  artifactKey: Guid(4a92a041cf3c3b14980ac361de019f3f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_Pond_02.prefab using Guid(4a92a041cf3c3b14980ac361de019f3f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b7c4dc7699eae59e3a6eac8c6583a7d6') in 0.0109143 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/UI/SM_UI_Number_08.prefab
+  artifactKey: Guid(85d5a40bc6492f44094c5aeaa85d13f1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/UI/SM_UI_Number_08.prefab using Guid(85d5a40bc6492f44094c5aeaa85d13f1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'aaebc0fbf7deb4536276fb6f563b5d5a') in 0.0125911 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/UI/SM_UI_LevelPath_02.prefab
+  artifactKey: Guid(33916f1a4f56fd647a1f33aaddbec874) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/UI/SM_UI_LevelPath_02.prefab using Guid(33916f1a4f56fd647a1f33aaddbec874) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '268bcea2225c616bf4f0a602bb81227e') in 0.0108794 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_Rock_Platform_01.prefab
+  artifactKey: Guid(1707b6a235fa31343addf335a6e4c923) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_Rock_Platform_01.prefab using Guid(1707b6a235fa31343addf335a6e4c923) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3310395f573306bdfad7c75d5cce7aa4') in 0.0132586 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_Mountain_05.prefab
+  artifactKey: Guid(83a32d464820f564fa2a222324181d2e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_Mountain_05.prefab using Guid(83a32d464820f564fa2a222324181d2e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd7cd5381f1e3d06afa6d332c6f836170') in 0.0110615 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_Path_10.prefab
+  artifactKey: Guid(1f9f81b71e8ab214b9ab2716eb4c4405) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_Path_10.prefab using Guid(1f9f81b71e8ab214b9ab2716eb4c4405) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c8aa4e8269e86e2919eeca756b5a814b') in 0.0122312 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_Mountain_04.prefab
+  artifactKey: Guid(598f4f2319fd9be4e8da6db3581fe5e1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_Mountain_04.prefab using Guid(598f4f2319fd9be4e8da6db3581fe5e1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1f8dccc27975cc6d77417fbaad8ae53c') in 0.0120132 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Prop_Stairs_Stone_01_Snow.prefab
+  artifactKey: Guid(4e07a28c79df8d44e8bda00b96dc44ac) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Snow/SM_Prop_Stairs_Stone_01_Snow.prefab using Guid(4e07a28c79df8d44e8bda00b96dc44ac) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bd2f6cb57dd9a68625f31befd48a7385') in 0.0147202 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Cube/SM_Tile_Cube_Hill_04.prefab
+  artifactKey: Guid(250230bb9fe497d4e810d618d69db5b2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Cube/SM_Tile_Cube_Hill_04.prefab using Guid(250230bb9fe497d4e810d618d69db5b2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '78bbdca5868da06483c8d8f190980678') in 0.0097896 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/UI/SM_UI_LocationMarker_02.prefab
+  artifactKey: Guid(c74ba065c98358346b26e21fe5e0a18c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/UI/SM_UI_LocationMarker_02.prefab using Guid(c74ba065c98358346b26e21fe5e0a18c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e4afc35ae2c53f4c90315c1f61ad0ed0') in 0.0107205 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_Column_Water_03.prefab
+  artifactKey: Guid(1e562b791b03d6e4f966915fcea5b3bb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_Column_Water_03.prefab using Guid(1e562b791b03d6e4f966915fcea5b3bb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '58989fd8d5d314231f5242d35193affc') in 0.0122255 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Cube/SM_Tile_Cube_Water_02.prefab
+  artifactKey: Guid(9ecbafdd3a914d44491a4d30e6bf31c1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Cube/SM_Tile_Cube_Water_02.prefab using Guid(9ecbafdd3a914d44491a4d30e6bf31c1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8e9d66b918ec37c0da11627cf8cc2e5d') in 0.0107563 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Cube/SM_Tile_Cube_Flat_Water_02.prefab
+  artifactKey: Guid(f65aca722d376524dbffaaa0c52c6c6d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Cube/SM_Tile_Cube_Flat_Water_02.prefab using Guid(f65aca722d376524dbffaaa0c52c6c6d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '545e1b1944861546305a04d0861be179') in 0.0139232 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_River_10.prefab
+  artifactKey: Guid(6c049edeb2d53344fbfdab4a58bddf31) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_River_10.prefab using Guid(6c049edeb2d53344fbfdab4a58bddf31) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1d5eebc03c241725f02adfc7341bc1e5') in 0.0108488 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_Path_09.prefab
+  artifactKey: Guid(123b5e5750154f7418f8a73b428b6eb5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Imported/PolygonMini_Fantasy/Prefabs/Tiles/Hex/SM_Tile_Hex_Path_09.prefab using Guid(123b5e5750154f7418f8a73b428b6eb5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '04dcdd85eca00f1fbff3db48c370eadc') in 0.0108659 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
