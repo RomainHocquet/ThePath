@@ -6,12 +6,14 @@ using UnityEngine.Scripting.APIUpdating;
 public class Map : MonoBehaviour
 {
 
-
+    //witth and height should be setted in the unity editor
     public int width = 8;
     public int height = 8;
 
     [SerializeField]
     private PlayerCharacter player;//used to instantiate the player
+    [SerializeField]
+    private EnemyCharacter[] ennemiesType;
 
     public HexCell cellPrefab;
 
@@ -32,16 +34,36 @@ public class Map : MonoBehaviour
         }
 
         Instantiate(player);
-        player.coordinates = new HexCoordinates(1, 1);
+        HexCoordinates playerCoordinates = new HexCoordinates(1, 1);
+        player.Innit(this, playerCoordinates);
+
+        SpawnEnemies();
 
     }
 
-    /*
-    Move a give object to the given hexCoordinate
-    return false if it fail
-    */
-    public HexCoordinates Move(GameObject movedObject, HexCoordinates destGrid)
+    private void SpawnEnemies()
     {
+        EnemyCharacter enemy = Instantiate(ennemiesType[0]);
+        HexCoordinates enemyCoordinates = new HexCoordinates(3, 4);
+        enemy.Innit(this, enemyCoordinates);
+
+        enemy = Instantiate(ennemiesType[0]);
+        enemyCoordinates = new HexCoordinates(2, 4);
+        enemy.Innit(this, enemyCoordinates);
+
+        enemy = Instantiate(ennemiesType[0]);
+        enemyCoordinates = new HexCoordinates(1, 3);
+        enemy.Innit(this, enemyCoordinates);
+
+        enemy = Instantiate(ennemiesType[0]);
+        enemyCoordinates = new HexCoordinates(4, 2);
+        enemy.Innit(this, enemyCoordinates);
+
+    }
+
+    public HexCell GetHexCell(HexCoordinates destGrid)
+    {
+
         int destGridArrayZ = destGrid.Z;
         int destGridArrayX = destGrid.X + destGridArrayZ / 2;
 
@@ -52,9 +74,57 @@ public class Map : MonoBehaviour
         }
         catch (System.Exception)
         {
-            throw new System.Exception(movedObject + " tried to move out of the map:  (" + destGridArrayX + "," + destGridArrayZ + ")");
+            throw new System.Exception(" tried to get a cell out of the map:  (" + destGridArrayX + "," + destGridArrayZ + ")");
         }
 
+        return targetCell;
+
+    }
+
+    /*
+    Work like Move but will remove the gameobject from the old cell content
+    
+    return the new coordinate
+    */
+
+    public HexCoordinates MoveFrom(GameObject movedObject, HexCoordinates destGrid, HexCoordinates startingDest)
+    {
+        HexCoordinates newCoordinate = Move(movedObject, destGrid);
+
+        //character from the old cell and add it for the new cell
+        HexCell objectCell = GetHexCell(startingDest);
+        objectCell.cellContent = null;
+
+        return newCoordinate;
+    }
+    /*
+    Move a give object to the given hexCoordinate
+    You should check yourself if you can move to the given destination
+    
+    return the new coordinate
+    */
+    public HexCoordinates Move(GameObject movedObject, HexCoordinates destGrid)
+    {
+
+        HexCell targetCell;
+        try
+        {
+            targetCell = GetHexCell(destGrid);
+        }
+        catch (System.Exception)
+        {
+            int destGridArrayZ = destGrid.Z;
+            int destGridArrayX = destGrid.X + destGridArrayZ / 2;
+            throw new System.Exception(movedObject + " tried to move out of the map:  (" + destGridArrayX + "," + destGridArrayZ + ")");
+        }
+        if (targetCell.IsOccupied())
+        {
+            int destGridArrayZ = destGrid.Z;
+            int destGridArrayX = destGrid.X + destGridArrayZ / 2;
+            throw new System.Exception(movedObject + " tried to move in an occupied spaces:  (" + destGridArrayX + "," + destGridArrayZ + ")");
+        }
+
+        targetCell.cellContent = movedObject;
         Vector3 dest = targetCell.transform.position;
         movedObject.transform.position = dest;
 

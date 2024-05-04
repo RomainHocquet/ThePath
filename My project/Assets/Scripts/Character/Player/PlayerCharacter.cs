@@ -12,9 +12,6 @@ public class PlayerCharacter : Character
     {
         base.Start();
 
-        HexCoordinates startingDest = new HexCoordinates(coordinates.X, coordinates.Z);
-        this.coordinates = map.Move(gameObject, startingDest);
-
         camera = Camera.main;
     }
 
@@ -39,7 +36,11 @@ public class PlayerCharacter : Character
                 {
                     throw new System.Exception(" hit a mesh that doesn't contain a HexCell");
                 }
-                Move(cellHit);
+                if (cellHit.IsAdjacent(this.coordinates))
+                {
+                    Move(cellHit);
+                }
+                else Debug.Log("Clicked cell is not adjacent to player");
 
             }
 
