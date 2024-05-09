@@ -8,7 +8,7 @@ public class HexCell : MonoBehaviour
 	*/
 
 	public HexCoordinates coordinates;
-	public GameObject cellContent;
+	public CellObject cellContent;
 
 	//return true if there is a gameobject on that cell
 	public bool IsOccupied()

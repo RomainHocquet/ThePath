@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Scripting.APIUpdating;
 
@@ -13,12 +15,16 @@ public class Map : MonoBehaviour
     [SerializeField]
     private PlayerCharacter player;//used to instantiate the player
     [SerializeField]
+    private TurnManager turnManager;//used to instantiate the player
+    
+    [SerializeField]
     private EnemyCharacter[] ennemiesType;
 
     public HexCell cellPrefab;
 
     // HexCell[] cells;
     HexCell[,] cells;
+
 
 
     void Start()
@@ -33,9 +39,13 @@ public class Map : MonoBehaviour
             }
         }
 
-        Instantiate(player);
+        player = Instantiate(player);
         HexCoordinates playerCoordinates = new HexCoordinates(1, 1);
-        player.Innit(this, playerCoordinates);
+        HexCell destHex = GetHexCell(playerCoordinates);
+        player.Innit(this, destHex);
+        Move(player, destHex);
+        turnManager.setPlayer(player);
+
 
         SpawnEnemies();
 
@@ -43,21 +53,27 @@ public class Map : MonoBehaviour
 
     private void SpawnEnemies()
     {
-        EnemyCharacter enemy = Instantiate(ennemiesType[0]);
-        HexCoordinates enemyCoordinates = new HexCoordinates(3, 4);
-        enemy.Innit(this, enemyCoordinates);
+               HexCoordinates enemyCoordinates = new HexCoordinates(3, 4);
+        SpawnCharacter(ennemiesType[0], enemyCoordinates);
 
-        enemy = Instantiate(ennemiesType[0]);
-        enemyCoordinates = new HexCoordinates(2, 4);
-        enemy.Innit(this, enemyCoordinates);
-
-        enemy = Instantiate(ennemiesType[0]);
-        enemyCoordinates = new HexCoordinates(1, 3);
-        enemy.Innit(this, enemyCoordinates);
-
-        enemy = Instantiate(ennemiesType[0]);
         enemyCoordinates = new HexCoordinates(4, 2);
-        enemy.Innit(this, enemyCoordinates);
+        SpawnCharacter(ennemiesType[0], enemyCoordinates);
+
+        enemyCoordinates = new HexCoordinates(2, 4);
+        SpawnCharacter(ennemiesType[0], enemyCoordinates);
+
+        enemyCoordinates = new HexCoordinates(1, 3);
+        SpawnCharacter(ennemiesType[0], enemyCoordinates);
+    }
+
+    private void SpawnCharacter(Character character, HexCoordinates coordinates)
+    {
+        
+        EnemyCharacter enemy = Instantiate(ennemiesType[0]);
+        turnManager.addEnemies(enemy);
+        HexCell destHex = GetHexCell(coordinates);
+        enemy.Innit(this, destHex);
+        Move(enemy, destHex);
 
     }
 
@@ -84,16 +100,15 @@ public class Map : MonoBehaviour
     /*
     Work like Move but will remove the gameobject from the old cell content
     
-    return the new coordinate
+    return the HexCell
     */
 
-    public HexCoordinates MoveFrom(GameObject movedObject, HexCoordinates destGrid, HexCoordinates startingDest)
+    public HexCell MoveFrom(CellObject movedObject, HexCell destGrid, HexCell startingDest)
     {
-        HexCoordinates newCoordinate = Move(movedObject, destGrid);
+        HexCell newCoordinate = Move(movedObject, destGrid);
 
         //character from the old cell and add it for the new cell
-        HexCell objectCell = GetHexCell(startingDest);
-        objectCell.cellContent = null;
+        startingDest.cellContent = null;
 
         return newCoordinate;
     }
@@ -101,36 +116,25 @@ public class Map : MonoBehaviour
     Move a give object to the given hexCoordinate
     You should check yourself if you can move to the given destination
     
-    return the new coordinate
+    return the HexCell
     */
-    public HexCoordinates Move(GameObject movedObject, HexCoordinates destGrid)
+    public HexCell Move(CellObject movedObject, HexCell destCell)
     {
 
-        HexCell targetCell;
-        try
+        if (destCell.IsOccupied())
         {
-            targetCell = GetHexCell(destGrid);
-        }
-        catch (System.Exception)
-        {
-            int destGridArrayZ = destGrid.Z;
-            int destGridArrayX = destGrid.X + destGridArrayZ / 2;
-            throw new System.Exception(movedObject + " tried to move out of the map:  (" + destGridArrayX + "," + destGridArrayZ + ")");
-        }
-        if (targetCell.IsOccupied())
-        {
-            int destGridArrayZ = destGrid.Z;
-            int destGridArrayX = destGrid.X + destGridArrayZ / 2;
+            int destGridArrayZ = destCell.coordinates.Z;
+            int destGridArrayX = destCell.coordinates.X + destGridArrayZ / 2;
             throw new System.Exception(movedObject + " tried to move in an occupied spaces:  (" + destGridArrayX + "," + destGridArrayZ + ")");
         }
 
-        targetCell.cellContent = movedObject;
-        Vector3 dest = targetCell.transform.position;
+        destCell.cellContent = movedObject;
+        Vector3 dest = destCell.transform.position;
         movedObject.transform.position = dest;
 
         // Debug.Log("new coordinates: (" + destGridArrayX + "," + destGridArrayZ + ")");
 
-        return targetCell.coordinates;
+        return destCell;
     }
 
     void CreateCell(int x, int z)
@@ -153,6 +157,10 @@ public class Map : MonoBehaviour
     void Update()
     {
 
+    }
+    public void PlayerEndTurn()
+    {
+       turnManager.PlayerEndTurn();
     }
 }
 

@@ -11,8 +11,15 @@ public class PlayerCharacter : Character
     public override void Start()
     {
         base.Start();
+        Debug.Log("start = " + myHexCell);
 
         camera = Camera.main;
+    }
+
+    public override void Innit(Map map, HexCell hexCell)
+    {
+        base.Innit(map, hexCell);
+        Debug.Log("Innit = " + myHexCell);
     }
 
     // Update is called once per frame
@@ -22,6 +29,7 @@ public class PlayerCharacter : Character
 
         if (Input.GetMouseButtonDown(0))
         { // if left button pressed...
+
             Ray ray = camera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
@@ -34,17 +42,29 @@ public class PlayerCharacter : Character
                 }
                 catch (System.Exception)
                 {
-                    throw new System.Exception(" hit a mesh that doesn't contain a HexCell");
+                    throw new System.Exception("hit a mesh that doesn't contain a HexCell");
                 }
-                if (cellHit.IsAdjacent(this.coordinates))
+                if (cellHit.IsAdjacent(this.myHexCell.coordinates))
                 {
                     Move(cellHit);
+                    EndTurn();
                 }
                 else Debug.Log("Clicked cell is not adjacent to player");
 
             }
 
         }
+    }
+
+    public override void StartTurn()
+    {
+        base.StartTurn();
+    }
+    public override void EndTurn()
+    {
+        base.EndTurn();
+        map.PlayerEndTurn();
+
     }
 
 }

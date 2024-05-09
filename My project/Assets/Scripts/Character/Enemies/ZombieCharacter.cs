@@ -7,6 +7,7 @@ public class ZombieCharacter : EnemyCharacter
     // Start is called before the first frame update
     public override void Start()
     {
+        base.Start();
         
     }
 
@@ -14,5 +15,17 @@ public class ZombieCharacter : EnemyCharacter
     public override void Update()
     {
         
+    }
+    public override void StartTurn()
+    {
+     base.StartTurn();   
+
+    }
+    public override void EndTurn()
+    {
+     base.EndTurn();   
+     Debug.Log("ca marche zombie");
+        
+
     }
 }
