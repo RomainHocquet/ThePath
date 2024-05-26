@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyCharacter : Character
 {
-
+    public int moneyValue;
     //Base comportement for a player interacting with an ennemy is the player attacking the ennemy
     public override void Interact()
     {
@@ -24,6 +24,21 @@ public class EnemyCharacter : Character
     {
 
     }
+
+
+    public override void Die()
+    {
+        //Give money to player
+        map.player.EnemyKilled(this);
+
+
+        base.Die();
+
+        turnManager.removeEnemies(this);
+
+
+
+    }
     public override void StartTurn()
     {
         base.StartTurn();
@@ -32,6 +47,56 @@ public class EnemyCharacter : Character
     public override void EndTurn()
     {
         base.EndTurn();
-     Debug.Log("ca marche ennemy");
     }
+    //the map is in charge of moving the character
+    public override void Move(HexCell destCell)
+    {
+        if (destCell.IsOccupied())
+        {
+            if (destCell.cellContent is EnemyCharacter)
+            {
+                //Do nothing == wait
+            }
+            else //prevent from enemies from attachink each other, I might add a "friendly interact" one day
+            {
+                FaceDirection(destCell);
+                destCell.cellContent.Interact();
+
+            }
+        }
+        else
+        {
+            FaceDirection(destCell);
+            this.hexCell = map.MoveFrom(this, destCell, hexCell);
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -12,7 +12,8 @@ public class TurnManager : MonoBehaviour
     private PlayerCharacter player;
 
     [SerializeField]//Not nessecary
-    private EnemyCharacter[] ennemies;
+    private List<EnemyCharacter> enemies = new List<EnemyCharacter>();
+
 
     [SerializeField]
     private Text turnTimerText;
@@ -34,12 +35,17 @@ public class TurnManager : MonoBehaviour
 
     public void addEnemies(EnemyCharacter enemy)
     {
-        ennemies.Append<EnemyCharacter>(enemy);
+        enemies.Add(enemy);
     }
     public void addEnemies(EnemyCharacter[] enemies)
     {
-        ennemies.Concat<EnemyCharacter>(enemies);
+        this.enemies.AddRange(enemies);
     }
+    public void removeEnemies(EnemyCharacter enemy)
+    {
+        enemies.Remove(enemy);
+    }
+
     public void setPlayer(PlayerCharacter player)
     {
         this.player = player;
@@ -48,9 +54,10 @@ public class TurnManager : MonoBehaviour
     //Called by the player when his turn end
     public void PlayerEndTurn()
     {
-        foreach (Character enemy in ennemies)
+        foreach (Character enemy in enemies)
         {
             enemy.StartTurn();
+            enemy.EndTurn();
 
         }
         PlayerStartTurn();

@@ -6,20 +6,22 @@ using UnityEngine;
 public class PlayerCharacter : Character
 {
 
+[SerializeField]
+private Inventory myInventory;
     private new Camera camera;
     // Start is called before the first frame update
     public override void Start()
     {
         base.Start();
-        Debug.Log("start = " + myHexCell);
+        // Debug.Log("start = " + hexCell);
 
         camera = Camera.main;
     }
 
-    public override void Innit(Map map, HexCell hexCell)
+    public override void Innit(Map map, HexCell hexCell, TurnManager turnManager)
     {
-        base.Innit(map, hexCell);
-        Debug.Log("Innit = " + myHexCell);
+        base.Innit(map, hexCell, turnManager);
+        // Debug.Log("Innit = " + myHexCell);
     }
 
     // Update is called once per frame
@@ -44,7 +46,7 @@ public class PlayerCharacter : Character
                 {
                     throw new System.Exception("hit a mesh that doesn't contain a HexCell");
                 }
-                if (cellHit.IsAdjacent(this.myHexCell.coordinates))
+                if (cellHit.IsAdjacent(this.hexCell.coordinates))
                 {
                     Move(cellHit);
                     EndTurn();
@@ -56,6 +58,10 @@ public class PlayerCharacter : Character
         }
     }
 
+public void EnemyKilled(EnemyCharacter enemyKilled){
+
+    myInventory.AddMoney(enemyKilled.moneyValue);
+}
     public override void StartTurn()
     {
         base.StartTurn();
@@ -63,7 +69,7 @@ public class PlayerCharacter : Character
     public override void EndTurn()
     {
         base.EndTurn();
-        map.PlayerEndTurn();
+       turnManager.PlayerEndTurn();
 
     }
 

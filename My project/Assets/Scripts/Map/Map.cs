@@ -13,10 +13,10 @@ public class Map : MonoBehaviour
     public int height = 8;
 
     [SerializeField]
-    private PlayerCharacter player;//used to instantiate the player
+    public PlayerCharacter player;//used to instantiate the player
     [SerializeField]
-    private TurnManager turnManager;//used to instantiate the player
-    
+    private TurnManager turnManager;
+
     [SerializeField]
     private EnemyCharacter[] ennemiesType;
 
@@ -42,7 +42,7 @@ public class Map : MonoBehaviour
         player = Instantiate(player);
         HexCoordinates playerCoordinates = new HexCoordinates(1, 1);
         HexCell destHex = GetHexCell(playerCoordinates);
-        player.Innit(this, destHex);
+        player.Innit(this, destHex, turnManager);
         Move(player, destHex);
         turnManager.setPlayer(player);
 
@@ -53,7 +53,7 @@ public class Map : MonoBehaviour
 
     private void SpawnEnemies()
     {
-               HexCoordinates enemyCoordinates = new HexCoordinates(3, 4);
+        HexCoordinates enemyCoordinates = new HexCoordinates(3, 4);
         SpawnCharacter(ennemiesType[0], enemyCoordinates);
 
         enemyCoordinates = new HexCoordinates(4, 2);
@@ -68,11 +68,11 @@ public class Map : MonoBehaviour
 
     private void SpawnCharacter(Character character, HexCoordinates coordinates)
     {
-        
+
         EnemyCharacter enemy = Instantiate(ennemiesType[0]);
         turnManager.addEnemies(enemy);
         HexCell destHex = GetHexCell(coordinates);
-        enemy.Innit(this, destHex);
+        enemy.Innit(this, destHex, turnManager);
         Move(enemy, destHex);
 
     }
@@ -96,7 +96,6 @@ public class Map : MonoBehaviour
         return targetCell;
 
     }
-
     /*
     Work like Move but will remove the gameobject from the old cell content
     
@@ -145,7 +144,9 @@ public class Map : MonoBehaviour
         position.z = z * (HexMetrics.outerRadius * 1.5f);
 
         HexCell cell = cells[x, z] = Instantiate(cellPrefab);
+        cell.map = this;
         cell.gameObject.name = cellPrefab.gameObject.name + "(" + x + "," + z + ")";
+        cell.isObstacle = false;
 
         cell.transform.SetParent(transform, false);
         cell.transform.localPosition = position;
@@ -157,10 +158,6 @@ public class Map : MonoBehaviour
     void Update()
     {
 
-    }
-    public void PlayerEndTurn()
-    {
-       turnManager.PlayerEndTurn();
     }
 }
 
