@@ -9,7 +9,7 @@ public class CellObject : MonoBehaviour
 {
 
     //Called when the player interact with the object 
-    public virtual void Interact()
+    public virtual void Interact(Character characterInteracting)
     {
         Debug.Log("Subclass should implement Interact() function");
 

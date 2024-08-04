@@ -12,7 +12,10 @@ public class TurnManager : MonoBehaviour
     private PlayerCharacter player;
 
     [SerializeField]//Not nessecary
-    private List<EnemyCharacter> enemies = new List<EnemyCharacter>();
+    private List<EnemyCharacter> enemiesCharacter = new List<EnemyCharacter>();
+
+    [SerializeField]//Not nessecary
+    private List<Character> otherCharacters = new List<Character>();
 
 
     [SerializeField]
@@ -32,18 +35,46 @@ public class TurnManager : MonoBehaviour
     {
 
     }
+    public void addCharacter(Character character)
+    {
 
-    public void addEnemies(EnemyCharacter enemy)
-    {
-        enemies.Add(enemy);
+        if (character is EnemyCharacter)
+        {
+            EnemyCharacter enemy = (EnemyCharacter)character;
+            addEnemies(enemy);
+        }
+        else
+        {
+
+            otherCharacters.Add(character);
+        }
     }
-    public void addEnemies(EnemyCharacter[] enemies)
+    public void removeCharacter(Character character)
     {
-        this.enemies.AddRange(enemies);
+        if (character is EnemyCharacter)
+        {
+            EnemyCharacter enemy = (EnemyCharacter)character;
+            removeEnemies(enemy);
+        }
+        else
+        {
+            otherCharacters.Remove(character);
+        }
     }
-    public void removeEnemies(EnemyCharacter enemy)
+
+
+    private void addEnemies(EnemyCharacter enemy)
     {
-        enemies.Remove(enemy);
+        enemiesCharacter.Add(enemy);
+    }
+
+    private void addEnemies(EnemyCharacter[] enemies)
+    {
+        this.enemiesCharacter.AddRange(enemies);
+    }
+    private void removeEnemies(EnemyCharacter enemy)
+    {
+        enemiesCharacter.Remove(enemy);
     }
 
     public void setPlayer(PlayerCharacter player)
@@ -54,11 +85,15 @@ public class TurnManager : MonoBehaviour
     //Called by the player when his turn end
     public void PlayerEndTurn()
     {
-        foreach (Character enemy in enemies)
+        foreach (EnemyCharacter enemy in enemiesCharacter)
         {
             enemy.StartTurn();
             enemy.EndTurn();
-
+        }
+        foreach (Character character in otherCharacters)
+        {
+            character.StartTurn();
+            character.EndTurn();
         }
         PlayerStartTurn();
     }

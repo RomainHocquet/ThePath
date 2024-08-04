@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
-
+using UnityEngine.UI;
 public class Character : CellObject
 {
     // [HideInInspector]
@@ -12,8 +12,10 @@ public class Character : CellObject
 
     public int MaxHeatlhPoint = 1;
     public int currentHeatlhPoint = 1;
+    public int attackPower = 1;
     public HealthBar healthbar;
     protected TurnManager turnManager;
+
 
 
     // Start is called before the first frame update
@@ -40,7 +42,7 @@ public class Character : CellObject
             FaceDirection(destCell);
         if (destCell.IsOccupied())
         {
-            destCell.cellContent.Interact();
+            destCell.cellContent.Interact(this);
         }
         else
         {
@@ -67,7 +69,7 @@ public class Character : CellObject
 
         // Debugging: Visualize the direction in the editor
         Debug.DrawLine(pointA.position, pointB.position, Color.red);
-        Debug.Log(rotation);
+        // Debug.Log(rotation);
 
     }
 
@@ -79,7 +81,7 @@ public class Character : CellObject
         Destroy(this.gameObject);
 
     }
-    public void TakeDamage(int damage)
+    public virtual void TakeDamage(int damage)
     {
 
         currentHeatlhPoint -= damage;

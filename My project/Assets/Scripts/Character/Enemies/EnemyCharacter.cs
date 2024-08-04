@@ -6,9 +6,16 @@ public class EnemyCharacter : Character
 {
     public int moneyValue;
     //Base comportement for a player interacting with an ennemy is the player attacking the ennemy
-    public override void Interact()
+    public override void Interact(Character characterInteracting)
     {
-        TakeDamage(1);
+        if (characterInteracting is PlayerCharacter)
+        {
+            TakeDamage(characterInteracting.attackPower);
+        }
+        else
+        {
+            //Do nothing
+        }
     }
 
 
@@ -34,7 +41,7 @@ public class EnemyCharacter : Character
 
         base.Die();
 
-        turnManager.removeEnemies(this);
+        turnManager.removeCharacter(this);
 
 
 
@@ -60,8 +67,7 @@ public class EnemyCharacter : Character
             else //prevent from enemies from attachink each other, I might add a "friendly interact" one day
             {
                 FaceDirection(destCell);
-                destCell.cellContent.Interact();
-
+                destCell.cellContent.Interact(this);
             }
         }
         else
@@ -71,19 +77,6 @@ public class EnemyCharacter : Character
         }
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 

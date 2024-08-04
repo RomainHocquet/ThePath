@@ -18,7 +18,7 @@ public class Map : MonoBehaviour
     private TurnManager turnManager;
 
     [SerializeField]
-    private EnemyCharacter[] ennemiesType;
+    private Character[] entitiesType;
 
     public HexCell cellPrefab;
 
@@ -39,6 +39,7 @@ public class Map : MonoBehaviour
             }
         }
 
+        //Spawn player
         player = Instantiate(player);
         HexCoordinates playerCoordinates = new HexCoordinates(1, 1);
         HexCell destHex = GetHexCell(playerCoordinates);
@@ -49,32 +50,44 @@ public class Map : MonoBehaviour
 
         SpawnEnemies();
 
+        //spawn merchent
+        HexCoordinates enemyCoordinates = new HexCoordinates(3, 1);
+          Character newCharacter = SpawnCharacter(entitiesType[1], enemyCoordinates);
+        Debug.Log(" entitiesType[1] = " + entitiesType[1]);
+        Debug.Log(" newCharacter =" + newCharacter);
     }
 
     private void SpawnEnemies()
     {
         HexCoordinates enemyCoordinates = new HexCoordinates(3, 4);
-        SpawnCharacter(ennemiesType[0], enemyCoordinates);
+        SpawnCharacter(entitiesType[0], enemyCoordinates);
 
         enemyCoordinates = new HexCoordinates(4, 2);
-        SpawnCharacter(ennemiesType[0], enemyCoordinates);
+        SpawnCharacter(entitiesType[0], enemyCoordinates);
 
         enemyCoordinates = new HexCoordinates(2, 4);
-        SpawnCharacter(ennemiesType[0], enemyCoordinates);
+        SpawnCharacter(entitiesType[0], enemyCoordinates);
 
-        enemyCoordinates = new HexCoordinates(1, 3);
-        SpawnCharacter(ennemiesType[0], enemyCoordinates);
     }
 
-    private void SpawnCharacter(Character character, HexCoordinates coordinates)
+    private Character SpawnCharacter(Character characterType, HexCoordinates coordinates)
     {
+        Character newCharacter;
+        if (characterType is EnemyCharacter)
+        {
+            newCharacter = (EnemyCharacter)Instantiate(characterType);
+            turnManager.addCharacter((EnemyCharacter)newCharacter);
+        }
+        else
+        {
+            newCharacter = Instantiate(characterType);
+            turnManager.addCharacter(newCharacter);
+        }
 
-        EnemyCharacter enemy = Instantiate(ennemiesType[0]);
-        turnManager.addEnemies(enemy);
         HexCell destHex = GetHexCell(coordinates);
-        enemy.Innit(this, destHex, turnManager);
-        Move(enemy, destHex);
-
+        newCharacter.Innit(this, destHex, turnManager);
+        Move(newCharacter, destHex);
+        return newCharacter;
     }
 
     public HexCell GetHexCell(HexCoordinates destGrid)
